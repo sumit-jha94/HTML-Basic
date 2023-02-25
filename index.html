@@ -7,9 +7,17 @@
     <title>Creating a simple HTML page</title>
 </head>
 <body>
+    <p>
+        TABLE OF CONTENT 
+        <ol>
+           <a href="#Assignment"> <li>Assignment - 1</li></a>
+            <a href="#Assignment2"> <li>Assignment - 2</li> </a>
+             <a href="#table"> <li>Table</li> </a>
+        </ol>
+    </p>
     <!-- Heading & Paragraph -->
     <hr>
-    <h1> <ul> <u> Assignment - 1 </u> </ul> </h1>
+    <h1 id="Assignment"> <ul> <u> Assignment - 1 </u> </ul> </h1>
    
     <H2>My First HTML page</H2>
 
@@ -18,7 +26,7 @@
         u has been added to make it unordered list
       -->
       <hr>
-    <h1> <br>
+    <h1 id="Assignment2"> <br>
         <ul> <u> Assignment - 2 </u> </ul>
     </h1>
     
@@ -38,11 +46,12 @@
     <hr>
     
     <!-- Creating a table with navigation -->
-    <h1> <br> Table With Marks</h1>
-    <table border="2" align="center" >
+    <h1 align="center"> <br id="table"> Table</h1>
+    <h2>Simple Table</h2>
+    <table border="2" align="center" width="10px"  >
         <thead>
-            <tr align="center">
-                <td> <b> Class </b> </td>
+            <tr align="center" >
+                <td>  <b> Class </b> </td>
                 <td> <b> Board </b> </td>
                 <td> <b> Marks </b> </td>
                 <td> <b> Remarks </b> </td>
@@ -54,23 +63,86 @@
                 <td>62%</td>
                 <td>Bad</td>
             </tr>
-            <tr>
+            <tr >
                 <td>12th</td>
                 <td>CBSE</td>
                 <td>75%</td>
                 <td>Bad</td>
             </tr>
-            <tr>
-                <td>10th</td>
+            <tr >
+                <td >10th</td>
                 <td>CBSE</td>
                 <td>75%</td>
                 <td>Bad</td>
             </tr>
-        
-
 
     </table>    
 
+    <h2>Merging Column</h2>
+    <!-- Creating a table to merge colum - colspan -->
+    <table border="4px" align="center">
+    <thead >
+        <tr align="center" >
+            <td>  <b> Class </b> </td>
+            <td> <b> Board </b> </td>
+            <td> <b> Marks </b> </td>
+            <td> <b> Remarks </b> </td>
+        </tr>
+    </thead>
+        <tr>
+
+            <td>B.Tech</td>
+            <td>BVPCOE</td>
+            <td colspan="2">no datas</td>
+        </tr>
+        <tr >
+            <td>12th</td>
+            <td>CBSE</td>
+            <td>75%</td>
+            <td>Bad</td>
+        </tr>
+        <tr >
+            <td >10th</td>
+            <td>CBSE</td>
+            <td>75%</td>
+            <td>Bad</td>
+        </tr>
+    </table>
+    <h2>Merging ROW</h2>
+
+    <!-- merging 2 row with the help of rowspan -->
+
+
+    <table border="4px" align="center">
+        <thead>
+            <tr align="center" >
+                <td>  <b> Class </b> </td>
+                <td> <b> Board </b> </td>
+                <td> <b> Marks </b> </td>
+                <td> <b> Remarks </b> </td>
+            </tr>
+        </thead>
+            <tr>
+                <td>B.Tech</td>
+                <td>BVPCOE</td>
+                <td>62%</td>
+                <td rowspan="3" cellspacing="5px" >Bad</td>
+            </tr>
+            <tr >
+                <td>12th</td>
+                <!-- row has been merged, we can see only CBSE in both the row -->
+                <td rowspan="2" >CBSE</td>
+                <td>75%</td>
+                
+            </tr>
+            <tr >
+                <td >10th</td>
+                
+                <td>75%</td>
+                
+            </tr>
+
+    </table>
     
 <!-- Creating a link with redirection in current page -->
     <a href="D:\18-Feb-23\Basic\details.html" target="_blank" rel="noopener noreferrer">Sumit </a>
