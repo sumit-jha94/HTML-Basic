@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is full course on HTML">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     <title>Creating a simple HTML page</title>
 </head>
 <body>
@@ -16,6 +18,7 @@
             <a href="#table"> <li>Table</li> </a>
             <a href="#Embedding Different Content"> <li>Embedding Different Content</li> </a>
             <a href="#forms"> <li>Forms</li> </a>
+            <a href="#IFrames"> <li> IFrames </li> </a>
         </ol>
     </p>
     <!-- Heading & Paragraph -->
@@ -150,7 +153,7 @@
 <!-- Creating a link with redirection in current page -->
     <a href="D:\18-Feb-23\Basic\details.html" target="_blank" rel="noopener noreferrer">Sumit </a>
     <hr>
-<H1 id="Embedding Different Content" align="center" >Embedding Different Content</H1>
+<H1 id="Embedding Different Content" align="center" > <br> Embedding Different Content</H1>
 
 <h2>Adding Video</h2>
 
@@ -165,7 +168,10 @@
     <img src="D:\18-Feb-23\Basic\e-book.png" width="120" height="120">
 </a>
 <hr>
-<h1 id="forms" align="center">Forms</h1>
+<!-- Adding FORMs -->
+<br>
+<h1 id="forms" align="center"> <br> Forms</h1>
+
 
 <form action="details.html" method="get">
     <!-- label for First name  -->
@@ -205,13 +211,17 @@
         <input type="text" name="" id="" placeholder="Desc" >
         </p> 
     </P>
-    
+
     <!-- Submit -->
     <input type="button" value="Submit">
-
-
-
+    <hr>
 </form>
+<!-- Forms Completed Here -->
+
+<h1 id="IFrames" align="center"> <br> IFrames</h1>
+
+<iframe src="https://www.hindimaigyan.com" frameborder="0" style="height:500px;width:700px;"  ></iframe>
+
 
 </body>
 </html>
